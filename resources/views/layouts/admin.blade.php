@@ -12,22 +12,27 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/adminLTE/plugins/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('public/adminLTE/plugins/fontawesome-free/css/all.min.css') }}" />
     <!-- pace-progress -->
-    <link rel="stylesheet" href="/adminLTE/plugins/pace-progress/themes/black/pace-theme-flat-top.css" />
+    <link rel="stylesheet"
+        href="{{ asset('public/adminLTE/plugins/pace-progress/themes/black/pace-theme-flat-top.css') }}" />
     <!-- DataTables -->
-    <link rel="stylesheet" href="/adminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="/adminLTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="/adminLTE/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="{{ asset('public/adminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('public/adminLTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('public/adminLTE/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
 
-    <link rel="stylesheet" href="/adminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('public/adminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="/adminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <link rel="stylesheet"
+        href="{{ asset('public/adminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
 
     <!-- Toastr -->
-    <link rel="stylesheet" href="/adminLTE/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="{{ asset('public/adminLTE/plugins/toastr/toastr.min.css') }}">
     <!-- adminlte-->
-    <link rel="stylesheet" href="/adminLTE/dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="{{ asset('public/adminLTE/dist/css/adminlte.min.css') }}" />
     <style>
         .icon-container {
             width: 50px;
@@ -110,7 +115,7 @@
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class='icon-container'>
                             <img
-                                src="{{ Auth::user()->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : Auth::user()->profileimg }}" />
+                                src="{{ Auth::user()->profileimg === null ? asset('public/adminLTE/dist/img/personplaceholder.png') : Auth::user()->profileimg }}" />
                             <div class='status-circle bg-success'>
                             </div>
                         </div>
@@ -212,30 +217,30 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="/adminLTE/plugins/jquery/jquery.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    <script src="/adminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- DataTables  & Plugins -->
-    <script src="/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-    <script src="/adminLTE/plugins/jszip/jszip.min.js"></script>
-    <script src="/adminLTE/plugins/pdfmake/pdfmake.min.js"></script>
-    <script src="/adminLTE/plugins/pdfmake/vfs_fonts.js"></script>
-    <script src="/adminLTE/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-    <script src="/adminLTE/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/jszip/jszip.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('public/adminLTE/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
     <!-- pace-progress -->
-    <script src="/adminLTE/plugins/pace-progress/pace.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/pace-progress/pace.min.js') }}"></script>
 
-    <script src="/adminLTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
     <!-- Toastr -->
-    <script src="/adminLTE/plugins/toastr/toastr.min.js"></script>
+    <script src="{{ asset('public/adminLTE/plugins/toastr/toastr.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="/adminLTE/dist/js/adminlte.min.js"></script>
+    <script src="{{ asset('public/adminLTE/dist/js/adminlte.min.js') }}"></script>
     <script>
         let isSidebarToggled = false;
 
