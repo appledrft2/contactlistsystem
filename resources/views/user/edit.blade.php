@@ -17,7 +17,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="image">
-                                            <img src={{ $user->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $user->profileimg }}
+                                            <img src={{ $user->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $user->profileimg }}
                                                 id="profile" class="img-circle elevation-2 border border-secondary"
                                                 style="width:128px;height:128px" alt="User Image" />
                                         </div>

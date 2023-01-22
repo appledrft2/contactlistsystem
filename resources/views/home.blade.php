@@ -18,7 +18,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="image">
-                                            <img src={{ Auth::user()->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : Auth::user()->profileimg }}
+                                            <img src={{ Auth::user()->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : Auth::user()->profileimg }}
                                                 class="img-circle elevation-2 border border-secondary"
                                                 style="width:128px;height:128px" alt="User Image" id="profile" />
                                         </div>

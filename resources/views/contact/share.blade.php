@@ -31,7 +31,7 @@
                                                 <li class="list-group-item d-flex justify-content-between">
                                                     <div class="ms-2 me-auto mt-1">
                                                         <div class="d-inline">
-                                                            <img src={{ $friend->friend->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $friend->friend->profileimg }}
+                                                            <img src={{ $friend->friend->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $friend->friend->profileimg }}
                                                                 id="profile"
                                                                 class="img-circle elevation-2 border border-secondary"
                                                                 style="width:64px;height:64px" alt="User Image" />

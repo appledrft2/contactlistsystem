@@ -24,7 +24,7 @@
                                     @foreach ($friendRequests as $friendRequest)
                                         <tr>
                                             <td>
-                                                <img src={{ $friendRequest->sender->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $friendRequest->sender->profileimg }}
+                                                <img src={{ $friendRequest->sender->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $friendRequest->sender->profileimg }}
                                                     class="img-circle elevation-2 border border-secondary"
                                                     style="width:64px;height:64px" alt="FriendRequest Image" />
                                             </td>

@@ -25,7 +25,7 @@
                                     @foreach ($users as $user)
                                         <tr>
                                             <td>
-                                                <img src={{ $user->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $user->profileimg }}
+                                                <img src={{ $user->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $user->profileimg }}
                                                     class="img-circle elevation-2 border border-secondary"
                                                     style="width:64px;height:64px" alt="User Image" />
                                             </td>

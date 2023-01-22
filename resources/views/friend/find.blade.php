@@ -23,7 +23,7 @@
                                     @foreach ($notfriends as $notfriend)
                                         <tr>
                                             <td>
-                                                <img src={{ $notfriend->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $notfriend->profileimg }}
+                                                <img src={{ $notfriend->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $notfriend->profileimg }}
                                                     class="img-circle elevation-2 border border-secondary"
                                                     style="width:64px;height:64px" alt="Notfriend Image" />
                                             </td>
@@ -76,7 +76,7 @@
                                     @foreach ($invitedfriends as $invitedfriends)
                                         <tr>
                                             <td>
-                                                <img src={{ $invitedfriends->receiver->profileimg === null ? '/adminLTE/dist/img/personplaceholder.png' : $invitedfriends->receiver->profileimg }}
+                                                <img src={{ $invitedfriends->receiver->profileimg === null ? '/AdminLTE/dist/img/personplaceholder.png' : $invitedfriends->receiver->profileimg }}
                                                     class="img-circle elevation-2 border border-secondary"
                                                     style="width:64px;height:64px" alt="Invitedfriends Image" />
                                             </td>

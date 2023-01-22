@@ -20,7 +20,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="/AdminLTE/index2.html"><b>CONTACT LIST SYSTEM</b></a>
+            <a href="/"><b>CONTACT LIST SYSTEM</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="card">
