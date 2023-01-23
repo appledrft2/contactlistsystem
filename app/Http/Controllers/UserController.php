@@ -83,9 +83,9 @@ class UserController extends Controller
                 'profileimg' => 'required|image|mimes:png,jpg,jpeg|max:2048'
             ]);
             $imageName = time() . '.' . $request->profileimg->extension();
-            $request->profileimg->move(public_path('images'), $imageName);
+            $request->profileimg->move(storage_path('app/public/images'), $imageName);
 
-            $img_path = "/images/$imageName";
+            $img_path = "/storage/images/$imageName";
 
             $user->update(['profileimg' => $img_path]);
         }
