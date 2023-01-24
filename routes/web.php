@@ -22,7 +22,8 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Auth::routes();
+Illuminate\Support\Facades\Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('auth')->group(function () {

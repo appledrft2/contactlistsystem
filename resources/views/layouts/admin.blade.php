@@ -79,15 +79,14 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a type="submit" onclick="toggleDarkMode()" title="Toggle Dark Mode" class="nav-link border-0">
-                        <i class="fas fa-sun"></i>
+                        <span id="dark-mode-text">Dark</span> mode <i class="fas fa-sun"></i>
                     </a>
                 </li>
                 <li class="nav-item">
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
-                        <a href="#" onclick="document.getElementById('logout-form').submit();" type="submit"
-                            title="Sign Out" class="nav-link ">
+                        <a href="#" onclick="onLogout(event,'logout-form')" title="Sign Out" class="nav-link ">
                             <i class="fas fa-sign-out-alt"></i>
                         </a>
                     </form>
@@ -274,11 +273,14 @@
                 document.querySelector('nav').classList.remove('navbar-white');
                 document.querySelector('body').classList.add('dark-mode');
                 document.querySelector('nav').classList.add('navbar-dark');
+                document.querySelector('#dark-mode-text').innerText = 'Light';
+
             } else {
                 document.querySelector('body').classList.remove('dark-mode');
                 document.querySelector('nav').classList.remove('navbar-dark');
                 document.querySelector('nav').classList.add('navbar-light');
                 document.querySelector('nav').classList.add('navbar-white');
+                document.querySelector('#dark-mode-text').innerText = 'Dark';
             }
         }
 
@@ -307,12 +309,14 @@
                 document.querySelector('nav').classList.remove('navbar-dark');
                 document.querySelector('nav').classList.add('navbar-light');
                 document.querySelector('nav').classList.add('navbar-white');
+                document.querySelector('#dark-mode-text').innerText = 'Dark';
             } else {
                 localStorage.setItem('isDarkModeToggle', true);
                 document.querySelector('nav').classList.remove('navbar-light');
                 document.querySelector('nav').classList.remove('navbar-white');
                 document.querySelector('body').classList.add('dark-mode');
                 document.querySelector('nav').classList.add('navbar-dark');
+                document.querySelector('#dark-mode-text').innerText = 'Light';
             }
 
         }
@@ -322,6 +326,23 @@
             Swal.fire({
                 title: 'Are you sure?',
                 text: "You won't be able to revert this!",
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById(form).submit();
+                }
+            })
+        }
+
+        function onLogout(e, form) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Confirm Logout',
+                text: "Are you sure you want to logout?",
                 icon: 'info',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
