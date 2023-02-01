@@ -16,7 +16,29 @@ password:admin@admin.com
 
 ## Local setup
 
-composer install && npm install && npm run dev && php artisan storage:link && php artisan migrate
+List of prerequisites:
+PHP 8.1.6
+Composer version 2.4.1
+NodeJS v16.17.1
+npm 8.3.0
+a running MySQL or MariaDB
+
+Installation Steps:
+1. Clone the app and pull the latest update (.env file added)
+git clone https://github.com/appledrft2/contactlistsystem.git
+cd contactlistsystem
+git pull origin main
+
+2. Install the app
+ - make sure you have a running MySQL or MariaDB server for database migration
+ - composer install && npm install && php artisan storage:link && php artisan migrate
+ - if laravel ask "The database 'contactlistsystem' does not exist on the 'mysql' connection. Would you like to create it? (yes/no)" type "yes"
+
+3. Run the app
+php artisan serve
+
+4. visit the app and register (the first registered user will automatically be the Admin)
+http://127.0.0.1:8000/register
 
 ## About Laravel
 
