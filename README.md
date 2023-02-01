@@ -10,7 +10,7 @@
 ## You can visit the system live at 
 https://contactlistsystem-production.up.railway.app/
 
-admin account:
+Admin account:
 username:admin@admin.com
 password:admin@admin.com
 
